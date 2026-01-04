@@ -2,19 +2,62 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Anime Recommender AI</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Anime Recommender</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+        h1 {
+            color: #5a2a83;
+        }
+        input, button {
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #5a2a83;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #7e3db0;
+        }
+        #result, #description, #trailer {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        #trailer a {
+            text-decoration: none;
+            color: #ff4500;
+            font-weight: bold;
+        }
+        #trailer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Anime Recommender 🎴</h1>
-        <p>Wpisz swoje preferencje (np. akcja, romans, fantasy, ezoteryka):</p>
-        <input type="text" id="prefs" placeholder="Twoje preferencje...">
-        <button onclick="getRecommendation()">Losuj anime</button>
-        <div id="result"></div>
-        <div id="description"></div>
-        <div id="trailer"></div>
-    </div>
-<script src="script.js"></script>
+    <h1>AI Anime Recommender</h1>
+    <p>Wpisz swoje preferencje (np. akcja, romans, fantasy, komedia, ezoteryka):</p>
+    <input type="text" id="prefs" placeholder="Twoje preferencje...">
+    <button onclick="getRecommendation()">Rekomenduj</button>
+
+    <p id="result"></p>
+    <p id="description"></p>
+    <p id="trailer"></p>
+
+    <script src="script.js"></script>
 </body>
 </html>
