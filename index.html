@@ -2,19 +2,19 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Recommender</title>
+    <title>Anime Recommender AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Anime Recommender (Mock AI)</h1>
-        <p>Wpisz swoje preferencje (np. akcja, romans, fantasy) i kliknij "Rekomenduj".</p>
+        <h1>Anime Recommender 🎴</h1>
+        <p>Wpisz swoje preferencje (np. akcja, romans, fantasy, ezoteryka):</p>
         <input type="text" id="prefs" placeholder="Twoje preferencje...">
-        <button onclick="getRecommendation()">Rekomenduj</button>
-        <p id="result"></p>
+        <button onclick="getRecommendation()">Losuj anime</button>
+        <div id="result"></div>
+        <div id="description"></div>
+        <div id="trailer"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
